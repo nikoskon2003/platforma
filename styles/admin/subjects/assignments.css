@@ -1,0 +1,499 @@
+.title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+}
+
+.assignments-cont {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 30px;
+    width: 90%;
+    height: 500px;
+    
+    background-color: hsl(200, 60%, 60%);
+    box-shadow: 3px 7px 10px hsla(216, 18%, 16%, 0.5);
+    border-radius: 6px;
+
+    user-select: none;
+    font-size: 16px;
+}
+.assignments-cont::before {
+    content: '';
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+    font-size: 1.1em;
+    height: 30px;
+    font-family: 'Noto Sans';
+    color: black;
+    background-color: hsl(200, 60%, 60%);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.left-side {
+    width: 25%;
+    height: 100%;
+    float: left;
+    vertical-align: top;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.new-assignment {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.new-assignment a {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: hsl(200, 80%, 95%);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: rgb(10, 117, 233);
+    text-decoration: none;
+    line-height: 1px;
+    height: 22px;
+}
+.new-assignment a:hover {
+    background-color: hsl(200, 80%, 80%);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.new-assignment a img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+
+.assignment {
+    width: 100%;
+    height: 50px;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    background-color: hsl(210, 17%, 93%);
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+
+    margin: 0;
+    padding: 5px;
+    padding-left: 7px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.assignment:hover {
+    background-color: hsl(210, 4%, 73%);
+}
+.assignment::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: hsl(210, 4%, 73%);
+}
+.assignment:hover::after {
+    background-color: orange;
+}
+
+.assignments-name {
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+.assignment-end {
+    margin-top: 3px;
+    font-size: 10px;
+}
+
+
+.right-side {
+    width: calc(75% - 5px);
+    height: 100%;
+    float: right;
+    vertical-align: top;
+    overflow-y: scroll;
+    background-color: white;
+    text-align: center;
+}
+
+.non-selected-text {
+    display: block;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 24px;
+    width: 100%;
+    margin-top: 20vh;
+}
+
+.new-assignment-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-size: 32px;
+}
+
+.new-assignment-form {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.field-name-text {
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 24px;
+    display: block;
+    pointer-events: none;
+}
+
+input[name="name"] {
+    display: block;
+    width: 40%;
+    height: 30px;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    border: 1px solid rgb(63, 64, 65);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    pointer-events: auto;
+}
+.time {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+.time-cont {
+    display: inline-block;
+    margin: 4px;
+}
+.time-title {
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    display: block;
+}
+
+.time-cont input {
+    width: 60px;
+    margin: 0 auto;
+    display: block;
+
+    font-size: 18px;
+    border: 1px solid rgb(63, 64, 65);
+    border-radius: 2px;
+    padding: 1px;
+    pointer-events: auto;
+}
+
+.submit-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    pointer-events: auto;
+}
+.submit-button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+.assignment-edit-area {
+    width: 90%;
+    margin: 0 auto;
+    max-height: 30px;
+    background-color: rgb(31, 157, 230);
+    display: inline-block;
+    position: relative;
+    padding-top: 30px;
+    text-align: left;
+    animation: edit-button-pulse 3s infinite;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@keyframes edit-button-pulse {
+    0% {background-color: hsl(202, 80%, 51%);}
+    50% {background-color: hsl(202, 80%, 40%);}
+    100% {background-color: hsl(202, 80%, 51%);}
+}
+
+.edit-text-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    color: hsl(0, 0%, 100%);
+    line-height: 28px;
+}
+.edit-text-title:hover {
+    cursor: pointer;
+}
+.toggle-switch {
+    display: none;
+}
+
+.toggle-switch:checked ~.edit-area-cont {
+    display: inline-block;
+}
+.edit-area-cont {
+    width: 100%;
+    background-color: rgba(224, 224, 224, 0.7);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    display: none;
+    pointer-events: all;
+    text-align: center;
+    padding-bottom: 10px;
+    position: absolute;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 5;
+}
+
+.student-replies {
+    width: 100%;
+}
+.reply {
+    height: 30px;
+    max-height: 30px;
+    width: 100%;
+    background-color: hsl(0, 0%, 90%);
+    display: inline-block;
+    text-align: left;
+}
+.reply:hover {
+    background-color: hsl(0, 0%, 70%);
+    cursor: pointer;
+}
+.reply-name {
+    width: 100%;
+    height: 30px;
+    font-family: 'Noto Sans';
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.reply-toggle:checked ~.reply-files {
+    display: block;
+}
+.reply-toggle {
+    display: none;
+}
+.reply-files {
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    pointer-events: none;
+    padding-bottom: 14px;
+    display: none;
+}
+
+.file {
+    display: block;
+    width: 100%;
+    margin: 0;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #444;
+    pointer-events: all;
+    color: black;
+    font-family: 'Noto Sans';
+}
+.file.exp {
+    background-color: #ffaaaa;
+}
+.file:hover {
+    background-color: #999;
+    cursor: pointer;
+}
+.file.exp:hover {
+    background-color: #fd3e3e; 
+}
+.file img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 2px;
+    vertical-align: middle;
+}
+.file .file-name {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    word-wrap: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 25px - 5px - 140px);
+    vertical-align: middle;
+}
+.file .file-date {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.title-mb {
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 6vw;
+    margin-top: 50px;
+}
+.sub-navigation {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+}
+.sub-navigation * {
+    margin: 0 auto;
+    height: 30px;
+    width: 50%;
+    background: linear-gradient(0deg, hsl(0, 0%, 100%) 75%, hsl(0, 0%, 95%) 100%);
+
+    text-align: center;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: 'Roboto';
+    font-size: calc(3vw + 5px);
+    line-height: 37px;
+}
+.clicked-cont {
+    background: linear-gradient(0deg, hsl(200, 95%, 64%) 75%, hsl(200, 95%, 58%) 100%);
+}
+
+#assignments-list {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 30px;
+    width: 90%;
+    height: 500px;
+	overflow-y: auto;
+    
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 7px 10px hsla(216, 18%, 16%, 0.5);
+    border-radius: 6px;
+
+    user-select: none;
+    font-size: 16px;
+}
+#assignments-list::before {
+    content: '';
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    line-height: 1.8;
+    font-size: 1.1em;
+    height: 30px;
+    font-family: 'Noto Sans';
+    color: black;
+    background-color: hsl(200, 60%, 60%);
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+#assignment-cont {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 90%;
+    
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 7px 10px hsla(216, 18%, 16%, 0.5);
+    border-radius: 6px;
+
+    user-select: none;
+    font-size: 16px;
+}
+
+#assignment-cont::before {
+    content: '';
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 1.8;
+    font-size: 1.1em;
+    height: 30px;
+    font-family: 'Noto Sans';
+    color: black;
+    background-color: hsl(200, 60%, 60%);
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.edit-area-cont-mb {
+    width: 100%;
+    background-color: rgba(224, 224, 224, 0.7);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    display: none;
+    pointer-events: none;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.toggle-switch:checked ~.edit-area-cont-mb {
+    display: inline-block;
+}

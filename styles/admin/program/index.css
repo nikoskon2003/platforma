@@ -1,0 +1,174 @@
+.title {
+  font-family: 'Roboto';
+  font-size: 46px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-family: 'Roboto';
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.editors {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.editors a {
+  font-family: 'Noto Sans';
+  font-size: 20px;
+  color: rgb(0, 89, 255);
+  text-decoration: none;
+}
+.editors a img {
+  width: 18px;
+  margin-bottom: -2px;
+}
+
+.program-container {
+  background-color: hsl(0, 100%, 78%);
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  box-shadow: 1px 1px 2px hsl(0, 90%, 62%);
+
+  text-align: center;
+  position: relative;
+}
+.program-container::before {
+  content: '';
+  width: 100%;
+  background-image: linear-gradient(hsl(0, 95%, 73%), hsl(0, 100%, 78%));
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 5px;
+}
+.program-container-mb {
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.category-name {
+  font-size: 24px;
+  font-family: 'Roboto';
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.program-type {
+  width: min(300px, 96%);
+  height: 30px;
+  margin: 0 auto;
+  background-color: rgb(226, 226, 226);
+  border-radius: 4px;
+  /*border: 1px solid rgb(173, 173, 173);*/
+  text-align: center;
+  padding: 0;
+  font-size: 0;
+  user-select: none;
+}
+.radio-cont {
+  display: inline-block;
+  height: 100%;
+  width: calc(100% / 2);
+  margin: 0 auto;
+  border: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative;
+}
+.radio-child {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Noto Sans';
+  line-height: 30px;
+}
+.radio-child:hover {
+  cursor: pointer;
+}
+input[type="radio"]:checked ~ .radio-child {
+  background-color: hsl(0, 90%, 62%) !important;
+}
+
+input[type="text"] {
+  width: 70%;
+  height: 30px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-right: 0;
+  border: 1px solid rgb(63, 64, 65);
+  border-radius: 2px;
+  padding: 1px;
+}
+textarea {
+  min-width: 70%;
+  max-width: 70%;
+  min-height: 80px;
+  height: 150px;
+  border: 1px solid rgb(63, 64, 65);
+  border-radius: 2px;
+  padding: 1px;
+}
+
+.submit-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Noto Sans';
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(173, 173, 173);
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  line-height: 30px;
+}
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+  transform: scale(0.98);
+}
+
+.cancel-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Noto Sans';
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(173, 173, 173);
+  display: inline-block;
+  color: rgb(211, 16, 16);
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: 30px;
+  line-height: 30px;
+}
+.cancel-button:hover {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+  transform: scale(0.98);
+}

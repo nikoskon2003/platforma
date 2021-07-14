@@ -1,0 +1,441 @@
+.title {
+    font-family: 'Roboto';
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 85px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid rgb(63, 64, 65);
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    margin: 0 auto;
+}
+.button:hover{
+    background-color: rgb(161, 161, 161);
+    border: 1px solid rgb(110, 112, 114);
+    cursor: pointer;
+}
+
+.back-button {
+    width: 85px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(63, 64, 65);
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(192, 20, 20);
+    padding-top: 2px;
+}
+.back-button:hover{
+    background-color: rgb(161, 161, 161);
+    border: 1px solid rgb(110, 112, 114);
+    cursor: pointer;
+}
+
+
+.class-content {
+    /*background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(245, 245, 245, 0.5);*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    padding: 0;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.class-calendar {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    /*background-color: hsl(205, 90%, 85%);
+    box-shadow: 1px 1px 1px hsl(205, 85%, 45%);*/
+}
+
+.calendar-top {
+    width: 100%;
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: -10px;
+    height: 15px;
+    color: black;
+}
+.calendar-top * {
+    display: inline-block;
+    color: black;
+}
+.calendar-top-left {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+.calendar-top-left:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+.calendar-top-right:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+.calendar-top-right {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+
+.calendar {
+    position: relative;
+    width: min(95%, 500px);
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+}
+
+.calendar__date {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+    grid-gap: min(20px, 5%);
+    box-sizing: border-box;
+}
+
+.calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
+}
+.calendar__day:nth-child(6), .calendar__day:nth-child(7) {
+    color: #ff685d
+}
+
+.calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+    text-decoration: none;
+    position: relative;
+}
+.calendar__number:nth-child(7n-1), .calendar__number:nth-child(7n) {
+    color: #ff685d;
+    font-weight: 700;
+}
+.calendar__number:hover:not(.empty) {
+    background-color: #009688;
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: underline;
+}
+.today {
+    background-color: hsl(202, 100%, 40%);
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.selected {
+    background-color: #009688;
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.hasevent:after {
+    content: '';
+    background-color: red;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+
+.selected-day-events {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(225, 227, 230, 0.9);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.selected-day-events-mb {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.selected-day-name {
+    font-family: 'Noto Sans';
+    color: black;
+    font-size: 24px;
+    width: 100%;
+}
+.day-event-list {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.event {
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: left;
+    background-color: rgb(249, 251, 252);
+    box-shadow: 1px 1px 1px rgb(238, 238, 238);
+    border-radius: 4px;
+    padding: 8px;
+    position: relative;
+}
+.event-pointer {
+    font-family: 'Noto Sans';
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.event-user {
+    font-family: 'Noto Sans';
+    display: inline-block;
+    font-size: 16px;
+}
+.event-line {
+    margin: 0 auto;
+    display: block;
+    width: 99%;
+    border: 1px solid hsl(205, 85%, 70%);
+    background-color: hsl(205, 85%, 70%);
+}
+.event-text {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    padding-top: 0;
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+    user-select: text;
+}
+.edit-event {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    color: hsl(224, 90%, 39%);
+    text-decoration: underline;
+}
+.edit-event:hover {
+    cursor: pointer;
+    color: hsl(224, 85%, 68%);
+}
+
+.editable-text {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+.edit-buttons {
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+}
+.edit-send-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(238, 238, 238);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 2px;
+    transition: transform 0.1s ease-in;
+    margin: 2px;
+}
+.edit-send-button:hover {
+    background-color: rgb(228, 228, 228);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.edit-cancel-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(189, 7, 7);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 2px;
+    transition: transform 0.1s ease-in;
+    margin: 2px;
+}
+.edit-cancel-button:hover {
+    background-color: rgb(228, 228, 228);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.edit-delete-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(189, 7, 7);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 2px;
+    transition: transform 0.1s ease-in;
+    margin: 2px;
+}
+.edit-delete-button:hover {
+    background-color: rgb(228, 228, 228);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+
+
+.new-event-area {
+    width: 100%;
+    padding-top: 10px;
+}
+.new-event-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(238, 238, 238);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 2px;
+
+    display: none;
+}
+.new-event-button:hover {
+    background-color: rgb(228, 228, 228);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.new-event-button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+}
+
+.new-event-inp {
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: rgb(249, 251, 252);
+    box-shadow: 1px 1px 1px rgb(238, 238, 238);
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+
+    display: none;
+}
+.new-event-text {
+    width: 98%;
+    max-width: 98%;
+    
+    height: 52px;
+    margin: 0 auto;
+    padding: 2px;
+}
+.send-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(238, 238, 238);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 2px;
+    transition: transform 0.1s ease-in;
+    margin: 2px;
+}
+.send-button:hover {
+    background-color: rgb(228, 228, 228);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.cancel-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(189, 7, 7);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 2px;
+    transition: transform 0.1s ease-in;
+    margin: 2px;
+}
+.cancel-button:hover {
+    background-color: rgb(228, 228, 228);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+
+.no-event {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+}
+.action-holder-mb {
+    width: 96%;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    user-select: none;
+    text-align: center;
+}
+
+.calendar-mb {
+    position: relative;
+    width: min(95%, 300px);
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 8px;
+    border-color: rgba(202, 202, 202, 0.8);
+    box-shadow: 1px 1px 1px rgba(202, 202, 202, 0.8);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+}
+
+/*.mobile .selected-day-events {
+    width: 98%;
+    margin: 0 auto;
+}*/

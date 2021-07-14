@@ -1,0 +1,667 @@
+.main-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(245, 245, 245, 0.5);
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+    padding: 0;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.main-left-column {
+    background-color: hsl(125, 60%, 60%);
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    box-shadow: 1px 1px 2px hsl(125, 60%, 40%);
+
+    text-align: center;
+}
+.main-left-column::before {
+    content: '';
+    background-image: linear-gradient(hsl(125, 60%, 50%), hsl(125, 60%, 60%));
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 5px;
+}
+
+.homepage-post {
+    background-color: hsl(120, 80%, 80%);
+    width: 99%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 1px hsl(120, 80%, 40%);
+
+    user-select: text;
+    text-align: left;
+}
+.homepage-post-title {
+    max-width: 100%;
+    padding: 5px;
+    padding-top: 0;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.homepage-post-date {
+    display: inline-block;
+    padding-left: 5px;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+}
+.homepage-post-user {
+    display: inline-block;
+    padding-left: 5px;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(0, 61, 0);
+}
+.homepage-post-line {
+    margin: 0 auto;
+    display: block;
+    width: 98%;
+    border: 1px solid green;
+    background-color: green; 
+}
+.homepage-post-text {
+    margin-top: 5px;
+    max-width: 100%;
+    padding: 5px;
+    padding-top: 0;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space: normal;   
+}
+.homepage-post-file-container {
+    margin: 0 auto;
+    margin-top: -10px;
+    text-align: center;
+    padding: 8px;
+    max-width: 100%;
+    white-space: normal;
+}
+.homepage-post-file {
+    display: inline-block;
+    margin: 4px auto;
+    margin-top: 14px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.homepage-post-file img {
+    width: 80px;
+    height: 80px;
+}
+.homepage-post-file p {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    color: black;
+    text-align: center;
+
+    width: 80px;
+    position: absolute;
+    bottom: -16px;
+    word-wrap: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.homepage-post-file.image {
+    padding: 0;
+    text-align: center;
+}
+.homepage-post-file.image:hover {
+    cursor: pointer;
+} 
+.homepage-post-file.image img{
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: white;
+}
+.post-editor-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(212, 250, 212);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: rgb(10, 117, 233);
+    text-decoration: none;
+    line-height: 1px;
+    height: 22px;
+}
+.post-editor-button:hover {
+    background-color: hsl(120, 76%, 75%);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.post-editor-button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+
+
+
+.right-containter {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    position: relative;
+}
+
+.other-right-container {
+    background-color: hsl(200, 60%, 60%);
+    width: 100%;
+    display: inline-block;
+    position: relative;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    box-shadow: 1px 1px 2px hsl(200, 60%, 40%);
+    text-align: center;
+}
+.other-right-container::before {
+    content: '';
+    background-image: linear-gradient(hsl(200, 60%, 50%), hsl(200, 60%, 60%));
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 5px;
+}
+
+
+.right-cont {
+    background-color: hsl(205, 90%, 85%);
+    width: 97%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 1px hsl(205, 85%, 45%);
+}
+
+.login {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.login p {
+    font-family: 'Noto Sans';
+    font-size: 24px;
+}
+.login input[type="text"] {
+    width: 75%;
+    height: 30px;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    border: 1px solid rgb(63, 64, 65);
+    border-radius: 2px;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+.login input[type="password"] {
+    width: 75%;
+    height: 30px;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    border: 1px solid rgb(63, 64, 65);
+    border-radius: 2px;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+.login input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+.login .autologin-text {
+    font-family: 'Noto Sans';
+    font-size: 18px;
+}
+.login button {
+    width: 80px;
+    height: 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+}
+.login button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+
+.program-right {
+    background-color: hsl(0, 100%, 72%);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    box-shadow: 1px 1px 2px hsl(0, 90%, 62%);
+
+    text-align: center;
+}
+.program-right::before {
+    content: '';
+    background-image: linear-gradient(hsl(0, 95%, 68%), hsl(0, 100%, 72%));
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 5px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 24px;
+}
+.program-right .edit-program-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: hsl(0, 100%, 90%);
+    display: block;
+    padding: 2px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: rgb(10, 117, 233);
+    text-decoration: none;
+    line-height: 1px;
+    height: 22px;
+    width: 122px;
+}
+.program-right .edit-program-button:hover {
+    background-color: hsl(0, 100%, 80%);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.program-right .edit-program-button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+.program-right .program-itself {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+}
+.program-right .program-itself img {
+    width: 10vw;
+}
+.program-right .program-itself p {
+    margin-top: -10px;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    color: rgb(10, 117, 233);
+}
+.program-right .program-reason {
+    max-width: 98%;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    user-select: text;
+	margin: 0 auto;
+    margin-top: 10px;
+	font-family: 'Noto Sans';
+	font-size: 15px;
+}
+
+
+.calendar-top {
+    width: 100%;
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: -10px;
+    height: 15px;
+    color: black;
+}
+.calendar-top * {
+    display: inline-block;
+}
+.calendar-top-left {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+.calendar-top-left:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+.calendar-top-right:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+.calendar-top-right {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+.calendar {
+    position: relative;
+    display: inline-block;
+    width: min(95%, 300px);
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 10px auto;
+    margin-bottom: 10px;
+}
+
+.calendar__date {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+    grid-gap: min(10px, 5%);
+    box-sizing: border-box;
+}
+
+.calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
+}
+.calendar__day:nth-child(6), .calendar__day:nth-child(7) {
+    color: #ff685d
+}
+
+.calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+    text-decoration: none;
+    position: relative;
+}
+.calendar__number:nth-child(7n-1), .calendar__number:nth-child(7n) {
+    color: #ff685d;
+    font-weight: 700;
+}
+.calendar__number:hover:not(.empty) {
+    background-color: #009688;
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: underline;
+}
+.today {
+    background-color: hsl(202, 100%, 40%);
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.hasevent:after {
+    content: '';
+    background-color: red;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+
+.posts-cont-mb {
+    width: 98%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.sub-navigation {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+}
+.sub-navigation * {
+    margin: 0 auto;
+    height: 30px;
+
+    text-align: center;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: 'Roboto';
+    font-size: calc(3vw + 5px);
+    line-height: 37px;
+}
+.to-posts {
+    width: 50%;
+    background: linear-gradient(0deg, hsl(125, 85%, 64%) 75%, hsl(125, 85%, 50%) 100%);
+}
+.to-program {
+    width: 50%;
+    background: linear-gradient(0deg, hsl(0, 100%, 64%) 75%, hsl(0, 100%, 52%) 100%);
+}
+
+.to-calendar-bg {
+    width: 30%;
+    background: linear-gradient(0deg, hsl(200, 95%, 64%) 75%, hsl(200, 95%, 58%) 100%);
+}
+.to-posts-bg {
+    width: 40%;
+    background: linear-gradient(0deg, hsl(125, 85%, 64%) 75%, hsl(125, 85%, 50%) 100%);
+}
+.to-program-bg {
+    width: 30%;
+    background: linear-gradient(0deg, hsl(0, 100%, 64%) 75%, hsl(0, 100%, 52%) 100%);
+}
+
+#posts-cont {
+    width: 98%;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#program-cont {
+    width: 98%;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.program-mb .edit-program-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: hsl(0, 100%, 90%);
+    display: block;
+    padding: 2px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: rgb(10, 117, 233);
+    text-decoration: none;
+    line-height: 1px;
+    height: 22px;
+    width: 126px;
+}
+.program-mb .edit-program-button:hover {
+    background-color: hsl(0, 100%, 80%);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.program-mb .edit-program-button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+.program-mb .program-itself {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    padding: 10px;
+    background-color: lightcoral;
+    border-radius: 8px;
+}
+.program-mb .program-itself img {
+    width: 30vw;
+}
+.program-mb .program-itself p {
+    margin-top: -10px;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    color: rgb(10, 117, 233);
+}
+.program-mb .program-reason {
+    max-width: 98%;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    user-select: text;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-family: 'Noto Sans';
+}
+
+#calendar-mb {
+	width: 100%;
+	margin-top: 70px;
+	text-align: center;
+}
+#calendar-mb .program-cont {
+    position: relative;
+    width: min(95%, 300px);
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 8px;
+    border-color: rgba(202, 202, 202, 0.8);
+    box-shadow: 1px 1px 1px rgba(202, 202, 202, 0.8);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+}
+#calendar-mb .utilcont {
+	position: relative;
+    width: min(95%, 300px);
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border-color: rgba(202, 202, 202, 0.8);
+    box-shadow: 1px 1px 1px rgba(202, 202, 202, 0.8);
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 10px auto;
+}
+#calendar-mb .utilcont .util-title {
+	font-family: 'Noto Sans';
+	font-size: 16px;
+}
+#calendar-mb .utilcont .util-ins {
+	width: 100%;
+}
+#calendar-mb .utilcont .util-ins img {
+	width: 100px;
+	margin-top: -10px;
+}
+#calendar-mb .utilcont .util-ins .util-link {
+	margin-top: -20px;
+}
+
+.other-right-container .right-cont .util-title {
+	font-family: 'Noto Sans';
+	font-size: 16px;
+}
+.other-right-container .right-cont .util-ins {
+	font-family: 'Noto Sans';
+	width: 100%;
+}
+.other-right-container .right-cont .util-ins img {
+	width: 100px;
+	margin-top: -10px;
+}
+.other-right-container .right-cont .util-link {
+	margin-top: -20px;
+}
+
+
+.poll-ans-button {
+	font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: hsl(70, 50%, 50%);
+    padding: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    height: 22px;
+	
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 15px;
+    color: black;
+    margin: 5px;
+    margin-bottom: 0;
+}

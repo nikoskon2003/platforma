@@ -1,0 +1,587 @@
+.title {
+    font-family: 'Roboto';
+    font-size: 40px;
+    width: calc(100% + 1px);
+    text-align: center;
+    background-color: hsl(0, 0%, 70%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    user-select: none;
+}
+.title:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 43%);
+    color: rgb(236, 236, 236);
+}
+
+.class {
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.class-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(245, 245, 245, 0.5);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    user-select: none;
+    font-size: 0;
+}
+
+.class-posts {
+    background-color: hsl(125, 60%, 60%);
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    box-shadow: 1px 1px 2px hsl(125, 60%, 40%);
+    text-align: center;
+}
+.new-post-button {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(212, 250, 212);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: rgb(10, 117, 233);
+    text-decoration: none;
+    line-height: 1px;
+    height: 22px;
+}
+.new-post-button:hover {
+    background-color: hsl(120, 76%, 75%);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.new-post-button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+.post {
+    background-color: hsl(120, 80%, 80%);
+    width: 99%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 1px hsl(120, 80%, 40%);
+
+    user-select: text;
+    text-align: left;
+
+    position: relative;
+}
+.post-title {
+    max-width: 100%;
+    padding: 5px;
+    padding-top: 0;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.post-date {
+    display: inline-block;
+    padding-left: 5px;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+}
+.post-user {
+    display: inline-block;
+    padding-left: 5px;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(0, 61, 0);
+}
+.post-line {
+    margin: 0 auto;
+    display: block;
+    width: 98%;
+    border: 1px solid green;
+    background-color: green; 
+}
+.post-text {
+    margin-top: 5px;
+    max-width: 100%;
+    padding: 5px;
+    padding-top: 0;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    word-wrap: break-word;
+    white-space: normal;   
+}
+.post-file-container {
+    margin: 0 auto;
+    margin-top: -10px;
+    text-align: center;
+    padding: 8px;
+    max-width: 100%;
+    white-space: normal;
+}
+.post-file {
+    display: inline-block;
+    margin: 4px auto;
+    margin-top: 14px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.post-file img {
+    width: 80px;
+    height: 80px;
+}
+.post-file p {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    color: black;
+    text-align: center;
+
+    width: 80px;
+    position: absolute;
+    bottom: -16px;
+    word-wrap: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.post-file.image {
+    padding: 0;
+    text-align: center;
+}
+.post-file.image:hover {
+    cursor: pointer;
+} 
+.post-file.image img{
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.post-edit {
+    font-family: 'Noto Sans';
+    position: absolute;
+    color: rgb(0, 89, 255);
+    top: 2px;
+    right: 4px;
+    font-size: 16px;
+}
+.post-edit img {
+    width: 14px;
+    height: 14px;
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+
+
+
+.class-calendar {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: hsl(205, 90%, 85%);
+    box-shadow: 1px 1px 1px hsl(205, 85%, 45%);
+}
+.calendar-title {
+    width: 100%;
+    font-size: 24px;
+    color: black;
+    font-family: 'Roboto';
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.calendar-top {
+    width: 100%;
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: -10px;
+    height: 15px;
+    color: black;
+}
+.calendar-top * {
+    display: inline-block;
+}
+.calendar-top-left {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+.calendar-top-left:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+.calendar-top-right:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+.calendar-top-right {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+
+.class-post-file-container {
+    margin: 0 auto;
+    margin-top: -10px;
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+    white-space: normal;
+}
+.class-post-file {
+    display: inline-block;
+    margin: 4px auto;
+    margin-top: 14px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.class-post-file img{
+    width: 80px;
+}
+.class-post-file p {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    color: black;
+    text-align: center;
+
+    width: 80px;
+    position: absolute;
+    bottom: -16px;
+    word-wrap: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.calendar {
+    position: relative;
+    width: min(95%, 300px);
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+}
+
+.calendar__date {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+    grid-gap: min(10px, 5%);
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
+}
+.calendar__day:nth-child(6), .calendar__day:nth-child(7) {
+    color: #ff685d
+}
+
+.calendar__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+    text-decoration: none;
+    position: relative;
+}
+.calendar__number:nth-child(7n-1), .calendar__number:nth-child(7n) {
+    color: #ff685d;
+    font-weight: 700;
+}
+.calendar__number:hover:not(.empty) {
+    background-color: #009688;
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: underline;
+}
+.today {
+    background-color: hsl(202, 100%, 40%);
+    color: #fff !important;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.hasevent:after {
+    content: '';
+    background-color: red;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+
+.subj-title {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+    margin-top: 10px;
+}
+.no-subjects {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto Sans';
+    margin-top: 10px;
+}
+
+.subjects-holder {
+    width: 100%;
+    text-align: center;
+}
+
+.subject {
+    text-decoration: none;
+    width: 250px;
+    height: 100px;
+    background-color: hsl(115, 82%, 56%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px hsl(115, 62%, 42%);
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    transition: all 0.1s ease 0s;
+}
+.subject:hover{
+    transform: scale(0.96);
+    background-color: hsl(115, 74%, 55%);
+    box-shadow: 1px 1px 5px hsl(115, 60%, 21%);
+}
+.subject-name {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: calc(10px + 100%);
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+.subject-class {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: calc(10px + 0.2vw);
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+}
+.subject-latest-update {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: calc(10px + 0.4vw);
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+}
+
+.subject-mb {
+    text-decoration: none;
+    width: calc(100px + 5vw + 14%);
+    height: 100px;
+    background-color: hsl(115, 82%, 56%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px hsl(115, 62%, 42%);
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    transition: all 0.1s ease 0s;
+}
+.subject-mb:hover{
+    transform: scale(0.96);
+    background-color: hsl(115, 74%, 55%);
+    box-shadow: 1px 1px 5px hsl(115, 60%, 21%);
+}
+.subject-name-mb {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: calc(10px + 3vw);
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.sub-navigation {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 4;
+}
+.sub-navigation * {
+    margin: 0 auto;
+    height: 30px;
+
+
+    text-align: center;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: 'Roboto';
+    font-size: calc(3vw + 5px);
+    line-height: 37px;
+}
+.to-edit {
+    width: 30%;
+    background: linear-gradient(0deg, hsl(0, 100%, 64%) 75%, hsl(0, 100%, 52%) 100%);
+}
+.to-posts {
+    width: 40%;
+    background: linear-gradient(0deg, hsl(125, 85%, 64%) 75%, hsl(125, 85%, 50%) 100%);
+}
+.to-calendar {
+    width: 30%;
+    background: linear-gradient(0deg, hsl(200, 95%, 64%) 75%, hsl(200, 95%, 58%) 100%);
+}
+
+
+.action-holder-mb {
+    width: 96%;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    user-select: none;
+    text-align: center;
+}
+
+.class-posts-mb {
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+}
+.calendar-mb {
+    position: relative;
+    width: min(95%, 300px);
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(#000, 0.5);
+    border-radius: 8px;
+    border-color: rgba(202, 202, 202, 0.8);
+    box-shadow: 1px 1px 1px rgba(202, 202, 202, 0.8);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+}
+
+.sub-navigation {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.sub-navigation * {
+    margin: 0 auto;
+    height: 30px;
+
+
+    text-align: center;
+    height: 37px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: 'Roboto';
+    font-size: calc(3vw + 5px);
+    line-height: 37px;
+}
+.to-classes {
+    width: 50%;
+    background: linear-gradient(0deg, hsl(125, 85%, 64%) 75%, hsl(125, 85%, 50%) 100%);
+}
+.to-subjects {
+    width: 50%;
+    background: linear-gradient(0deg, hsl(200, 95%, 64%) 75%, hsl(200, 95%, 58%) 100%);
+}
+
+.class-mb {
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 20px;
+}

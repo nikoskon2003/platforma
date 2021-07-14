@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+.home {
+    padding-top: 50px;
+    padding-bottom: 5px
+}
+.home p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home .box {
+	width: 60%;
+	height: 100%;
+	background: rgba(250, 252, 254, 0.9)
+}
+.home .center {
+	margin: auto;
+	width: 50%;
+	border: 3px solid rgb(151, 156, 158);
+    padding: 10px;
+    border-radius: 10px;
+}
+.home .box center p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .home .box{ 
+        width: 75%;
+    }
+    .login-container form input[type="password"] {
+        width: 70%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .login-container form input[type="text"] {
+        width: 70%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.login-container button {
+    padding: 6px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.login-container input[type="text"],  .login-container input[type="password"]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 80%;
+    max-width: 300px;
+}
+.login-container button:hover {
+    background: #ccc;
+}

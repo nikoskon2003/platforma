@@ -1,0 +1,153 @@
+.title {
+    font-family: 'Roboto';
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.field-label {
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+}
+
+.action-holder {
+    width: calc(500px + 10vw);
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    user-select: none;
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.class-select {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(110, 114, 116);
+    font-family: 'Noto Sans';
+}
+
+input[type="text"] {
+    width: 75%;
+    height: 35px;
+    display: block;
+    margin: 2px auto;
+    margin-top: 5px;
+}
+
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+
+.back-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    color: rgb(211, 16, 16);
+    text-decoration: none;
+    vertical-align: top;
+}
+.back-button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+.student-holder{
+    width: 100%;
+    text-align: center;
+}
+
+.student {
+    width: 100%;
+    height: 35px;
+    background-color: hsl(210, 17%, 93%);
+    text-align: left;
+    font-family: 'Noto Sans';
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.student p {
+    margin: 0;
+    padding: 5px;
+    padding-left: 7px;
+    max-width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.student:hover {
+    background-color: hsl(210, 4%, 73%);
+    cursor: pointer;
+}
+.student p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: hsl(210, 4%, 73%);
+}
+.student:hover p::after {
+    background-color: orange;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ p {
+    color: green;
+}
+input[type="checkbox"]:checked ~ p::after {
+    background-color: lime;
+}
+
+
+.action-holder-mb {
+    width: 96%;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    user-select: none;
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

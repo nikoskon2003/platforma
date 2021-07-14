@@ -1,0 +1,193 @@
+.title {
+    font-family: 'Roboto';
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.subtitle {
+    font-family: 'Roboto';
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 40px;
+}
+
+.subjects-holder {
+    width: 100%;
+    text-align: center;
+}
+
+.subject {
+    text-decoration: none;
+    width: 250px;
+    height: 100px;
+    background-color: hsl(115, 82%, 56%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px hsl(115, 62%, 42%);
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    transition: all 0.1s ease 0s;
+}
+.subject:hover{
+    transform: scale(0.96);
+    background-color: hsl(115, 74%, 55%);
+    box-shadow: 1px 1px 5px hsl(115, 60%, 21%);
+}
+.subject-name {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: calc(10px + 100%);
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+.subject-latest-update {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+
+.action-holder {
+    width: calc(500px + 10vw);
+    /*height: 300px;*/
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 4px solid rgb(110, 114, 116);
+    margin: 0 auto;
+}
+
+
+
+.new-subject {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.new-subject a {
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(212, 250, 212);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: rgb(10, 117, 233);
+    text-decoration: none;
+    line-height: 1px;
+    height: 22px;
+}
+.new-subject a:hover {
+    background-color: hsl(120, 76%, 75%);
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.new-subject a img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+
+.field-label {
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+}
+
+.main-classes {
+    width: 100%;
+    text-align: center;
+}
+.class {
+    width: 140px;
+    height: 22px;
+    background-color: rgb(214, 217, 219);
+    border: 1px solid rgb(131, 133, 134);
+    text-align: center;
+    font-family: 'Noto Sans';
+    display: inline-block;
+    margin: 8px;
+    overflow:hidden;
+}
+.class:hover {
+    transform: scale(0.9);
+}
+.class:hover > .edit-class{
+    display: block;
+}
+.class:hover > .class-name{
+    display: none;
+}
+
+.class-name {
+    margin-top: -1px;
+}
+.edit-class {
+    display: none;
+    margin-top: -1px;
+    width: 100%;
+    background-color: rgba(60, 62, 63, 0.3);
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans';
+    text-align: center;
+}
+
+
+.subject-mb {
+    text-decoration: none;
+    width: calc(100px + 5vw + 14%);
+    height: 100px;
+    background-color: hsl(115, 82%, 56%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px hsl(115, 62%, 42%);
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    transition: all 0.1s ease 0s;
+}
+.subject-mb:hover{
+    transform: scale(0.96);
+    background-color: hsl(115, 74%, 55%);
+    box-shadow: 1px 1px 5px hsl(115, 60%, 21%);
+}
+.subject-name-mb {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-size: calc(10px + 3vw);
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}

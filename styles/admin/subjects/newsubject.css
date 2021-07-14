@@ -1,0 +1,185 @@
+.title {
+    font-family: 'Roboto';
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.field-label {
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+}
+
+.action-holder {
+    width: calc(500px + 10vw);
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.class-select {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(110, 114, 116);
+    font-family: 'Noto Sans';
+}
+
+input[type="text"] {
+    width: 75%;
+    height: 35px;
+    display: block;
+    margin: 2px auto;
+    margin-top: 5px;
+}
+
+.submit-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.submit-button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+.back-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    color: rgb(211, 16, 16);
+    text-decoration: none;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.back-button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+
+.radio-cont {
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    z-index: 5;
+    margin: 0;
+    padding: 2px;
+    display: inline-block;
+    width: 45px;
+    text-align: center;
+}
+.radio-cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.radio-cont input:hover ~ .radio-child {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.radio-cont input:checked ~ .radio-child {
+    background-color: #3788e4;
+    border-radius: 5px;
+}
+.radio-child {
+    background-color: #e5e5e5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.radio-holder {
+    background-color: #e5e5e5;
+    padding: 2px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-family: 'Noto Sans';
+    user-select: none;
+}
+  
+.error {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+    color: rgb(231, 32, 25);
+}
+
+.teacher-holder{
+    width: 100%;
+    text-align: center;
+}
+
+.checkbox-container {
+    width: 140px;
+    height: 22px;
+    background-color: rgb(214, 217, 219);
+    border: 1px solid rgb(131, 133, 134);
+    text-align: center;
+    font-family: 'Noto Sans';
+    display: inline-block;
+    margin: 1px;
+    overflow: hidden;
+    user-select: none;
+}
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-text {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(214, 217, 219);
+    border: 1px solid rgb(131, 133, 134);
+    pointer-events: none;
+    line-height: 1;
+}
+.checkbox-container:hover input ~ .checkbox-text {
+    background-color: rgb(182, 184, 185);
+}
+.checkbox-container input:checked ~ .checkbox-text {
+    background-color: rgb(32, 182, 18);
+    border: 1px solid rgb(30, 126, 21);;
+}
+
+.action-holder-mb {
+    width: 96%;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}

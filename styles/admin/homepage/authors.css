@@ -1,0 +1,139 @@
+.title {
+    font-family: 'Roboto';
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.field-label {
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+}
+.authors-cont {
+    width: calc(500px + 10vw);
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.authors-cont-mb {
+    width: 98%;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+input[type="text"] {
+    width: 70%;
+    height: 30px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-right: 0;
+    border: 1px solid rgb(63, 64, 65);
+    border-radius: 2px;
+    padding: 1px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    vertical-align: top;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+.back-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(211, 16, 16);
+    text-decoration: none;
+}
+.back-button:hover{
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+
+.user-holder {
+    width: 100%;
+    padding-bottom: 10px;
+}
+.user {
+    width: 100%;
+    height: 35px;
+    background-color: hsl(210, 17%, 93%);
+    text-align: left;
+    font-family: 'Noto Sans';
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+
+    margin: 0;
+    padding-left: 5px;
+    padding-left: 7px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user:hover {
+    background-color: hsl(210, 4%, 73%);
+    cursor: pointer;
+}
+.user::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: hsl(210, 4%, 73%);
+}
+.user:hover::after {
+    background-color: orange;
+}
+
+.user-name {
+    margin-top: -1px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    outline: none;
+}
+.user-name:hover {
+    cursor: pointer;
+}

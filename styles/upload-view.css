@@ -1,0 +1,673 @@
+#select-files-container {
+    position: fixed;
+    margin: 0 auto;
+    width: 90%;
+    height: 80%;
+    z-index: 10;
+    font-size: 0;
+
+    left: 5%;
+    right: 5%;
+    top: 10%;
+    bottom: 10%;
+    
+    background-color: rgb(170, 170, 170);
+    box-shadow: 3px 7px 10px rgba(34, 40, 49, 0.5);
+    border-radius: 6px;
+
+    user-select: none;
+    display: none;
+}
+#select-files-container::before {
+    content: 'Επιλογή Αρχείων';
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    line-height: 1.4;
+    font-size: 20px;
+    height: 30px;
+    font-family: 'Noto Sans';
+    color: white;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0px 1px 4px #000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#select-files-container .file-limit {
+    position: absolute;
+    z-index: 11;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+#select-files-container > div {
+    height: calc(100% - 30px);
+    margin: 0 auto;
+    margin-top: 30px;
+    display: inline-block;
+    vertical-align: top;
+    user-select: none;
+}
+#select-files-container .select-left {
+    width: 70%;
+    background-color: white;
+    text-align: left;
+    padding: 5px;
+    overflow-y: scroll;
+    font-size: 16px;
+}
+#select-files-container .select-right {
+    width: 30%;    
+    background-color: white;
+    font-size: 16px;
+}
+
+#select-files-container .select-left .select-file-cont {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 5px auto;
+    margin: 0 auto;
+    position: relative;
+}
+#select-files-container .select-left .select-file-cont:hover {
+    cursor: pointer;
+}
+#select-files-container .select-left .select-file-cont img {
+    width: 100%;
+    position: absolute;
+}
+#select-files-container .select-left .select-file-cont img.select-file-image {
+    width: 80%;
+    left: 10%;
+    top: 5px;
+}
+
+#select-files-container .select-left #download-file {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: 35px;
+    position: relative;
+    vertical-align: top;
+}
+#select-files-container .select-left #download-file img {
+    width: 100%;
+    position: absolute;
+}
+
+
+#select-files-container .select-left .select-file-cont p {
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    pointer-events: none;
+}
+#select-files-container .select-left .select-file-cont p.back-folder-text {
+    top: 60%;
+}
+#select-files-container .select-left .select-file-cont p.star-folder-text {
+    top: 70%;
+}
+#select-files-container .select-left .select-file-cont p.file-text {
+    width: 98%;
+    left: 2%;
+    font-size: 12px;
+    top: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#select-files-container .select-left .select-file-cont p.file-date {
+    width: 90%;
+    font-size: 11px;
+    top: unset;
+    bottom: 22%;
+    left: 2px;
+}
+
+#select-files-container .select-left #file-info {
+    padding-left: 10px;
+    font-family: 'Noto Sans';
+    user-select: none;
+    display: none;
+}
+#select-files-container .select-left .file-info-stat {
+    margin-top: 10px;
+    color: rgb(88, 88, 88);
+}
+#select-files-container .select-left .file-info-button {
+    margin-top: 25px;
+    padding: 2px 5px;
+    border: 1px solid rgb(29, 29, 29);
+    border-radius: 10px;
+    display: inline-block;
+}
+#select-files-container .select-left .file-info-button:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    background-color: rgb(202, 202, 202);
+}
+#select-files-container .select-left #select-file-button {
+    color: hsl(120, 53%, 40%);
+}
+#select-files-container .select-left #fav-file-button {
+    color: hsl(39, 90%, 53%);
+}
+#select-files-container .select-left #delete-file-button {
+    color: hsl(0, 90%, 53%);
+}
+
+#select-files-container .select-right .right-top-part {
+    padding-top: 2px;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: white;
+    overflow-y: scroll;
+}
+#select-files-container .select-right .right-bottom-part {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0 0 4px #000;
+}
+
+#select-files-container .select-right .right-top-part .selected-file {
+    border-bottom: 2px solid black;
+    padding-left: 2px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(185, 185, 185);
+    font-family: 'Noto Sans';
+    position: relative;
+    vertical-align: top;
+}
+#select-files-container .select-right .right-top-part .selected-files-title {
+    width: 100%;
+    font-family: 'Noto Sans';
+    text-align: center;
+    margin-bottom: 5px;
+}
+#select-files-container .select-right .right-top-part .selected-file:hover {
+    cursor: pointer;
+    background-color: rgb(141, 141, 141);
+}
+#select-files-container .select-right .right-top-part .selected-file:hover img {
+    transform: scale(1.2);
+}
+#select-files-container .select-right .right-top-part .selected-file p {
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+#select-files-container .select-right .right-top-part .selected-file img {
+    width: 25px;
+    position: absolute;
+    right: 3px;
+}
+
+#select-files-container .select-right .right-bottom-part .bottom-upload-icon {
+    height: 45px;
+    width: 45px;
+    
+    top: 2.5px;
+    left: 3px;
+
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+#select-files-container .select-right .right-bottom-part .bottom-upload-icon:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    background-color: rgb(141, 141, 141);
+}
+#select-files-container .select-right .right-bottom-part .bottom-upload-icon img {
+    height: 40px;
+    position: absolute;
+    left: 2.5px;
+    top: 2px;
+	
+	animation: iconhover 3s ease-in-out infinite;
+}
+
+@keyframes iconhover {
+	0% {
+        transform: translate(0, 3);
+	}
+	50% {
+        transform: translate(0, -2px);
+    }
+	100% {
+        transform: translate(0, 3);
+	}
+}
+
+#select-files-container .select-right .right-bottom-part #bottom-upload-area {
+    height: 50px;
+    display: inline-block;
+    width: calc(100% - 101px);
+    margin-left: 2px;
+    padding-top: 2px;
+    font-family: 'Noto Sans';
+    line-height: 16px;
+    text-align: center;
+}
+
+#select-files-container .select-right .right-bottom-part #bottom-upload-area div {
+    text-align: center;
+    padding-top: 4px;
+}
+
+#upload-file-confirm {
+    color: rgb(126, 183, 236);
+    text-decoration: underline;
+	
+	display: none;
+}
+#upload-file-confirm:hover {
+    cursor: pointer;
+    color: hsl(7, 74%, 71%);
+}
+#select-files-container .select-right .right-bottom-part #bottom-upload-area .upload-load-bar {
+    border: 1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 20px;
+}
+#select-files-container .select-right .right-bottom-part #bottom-upload-area .upload-load-bar p {
+    color: white;
+    margin-top: -3px;
+}
+#upload-load-bar-ind {
+    background-color: rgb(23, 109, 238);
+    width: 0%;
+    transition: width 0.1s linear;
+    height: 18px;
+    margin-top: -17px;
+}
+
+#select-files-container .select-right .right-bottom-part .bottom-close {
+    height: 45px;
+    width: 45px;
+
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+
+    float: right;
+    margin-top: 2.5px;
+    margin-right: 3px;
+    font-family: 'Noto Sans';
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    user-select: none;
+    vertical-align: top;
+}
+#select-files-container .select-right .right-bottom-part .bottom-close:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    background-color: rgb(141, 141, 141);
+}
+
+
+
+#select-files-container-mb {
+    position: fixed;
+    margin: 0 auto;
+    width: 96%;
+    height: calc(100% - 5% - 70px);
+    z-index: 10;
+
+    left: 2%;
+    right: 2%;
+    top: 70px;
+    bottom: 5%;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 7px 8px rgba(34, 40, 49, 0.5);
+    border-radius: 6px;
+
+    user-select: none;
+    display: none;
+}
+#select-files-container-mb::before {
+    content: 'Επιλογή Αρχείων';
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    line-height: 1.8;
+    font-size: 1.1em;
+    height: 30px;
+    font-family: 'Noto Sans';
+    color: white;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0px 1px 4px #000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#select-files-container-mb .file-limit {
+    position: absolute;
+    z-index: 11;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+
+#select-files-container-mb .file-nav-buttons {
+    position: absolute;
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(126, 218, 247);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+#select-files-container-mb .file-nav-buttons div {
+    width: calc(50% - 5px);
+    height: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: rgb(126, 218, 247);
+    color: black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+#select-files-container-mb .file-nav-buttons div:hover {
+    background-color: rgb(46, 148, 196);
+    color: white;
+}
+
+#select-files-container-mb .file-nav-buttons div.active {
+    background-color: rgb(32, 125, 168);
+    color: white;
+}
+
+#select-files-container-mb .file-content {
+    width: 100%;
+    margin-top: 60px;
+    height: calc(100% - 110px);
+}
+
+#select-files-container-mb #filesystem-mb {
+    height: 100%;
+    font-family: 'Noto Sans';
+    user-select: none;
+    overflow-y: scroll;
+}
+
+#select-files-container-mb .select-file-cont {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+#select-files-container-mb .select-file-cont:hover {
+    cursor: pointer;
+}
+#select-files-container-mb .select-file-cont img {
+    width: 100%;
+    position: absolute;
+}
+#select-files-container-mb .select-file-cont img.select-file-image {
+    width: 80%;
+    left: 10%;
+    top: 5px;
+}
+#select-files-container-mb .select-file-cont p {
+    position: absolute;
+    font-family: 'Roboto';
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    pointer-events: none;
+}
+#select-files-container-mb .select-file-cont p.back-folder-text {
+    top: 60%;
+}
+#select-files-container-mb .select-file-cont p.star-folder-text {
+    top: 70%;
+}
+#select-files-container-mb .select-file-cont p.file-text {
+    width: 98%;
+    left: 2%;
+    font-size: 12px;
+    top: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#select-files-container-mb .select-file-cont p.file-date {
+    width: 90%;
+    font-size: 11px;
+    top: unset;
+    bottom: 22%;
+    left: 2px;
+}
+
+
+
+#select-files-container-mb #file-info-mb {
+    padding-left: 10px;
+    font-family: 'Noto Sans';
+    user-select: none;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#select-files-container-mb #file-info-mb #download-file-mb {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: 35px;
+    vertical-align: top;
+}
+#select-files-container-mb #file-info-mb #download-file-mb img {
+    width: 100%;
+}
+
+#select-files-container-mb #file-info-mb .file-info-stat {
+    margin-top: 2px;
+    color: rgb(88, 88, 88);
+}
+#select-files-container-mb #file-info-mb .file-info-button {
+    margin-top: 2px;
+    padding: 2px 5px;
+    border: 1px solid rgb(29, 29, 29);
+    border-radius: 10px;
+    display: inline-block;
+}
+#select-files-container-mb #file-info-mb .file-info-button:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    background-color: rgb(202, 202, 202);
+}
+#select-files-container-mb #file-info-mb #select-file-button-mb {
+    color: hsl(120, 53%, 40%);
+}
+#select-files-container-mb #file-info-mb #fav-file-button-mb {
+    color: hsl(39, 90%, 53%);
+}
+#select-files-container-mb #file-info-mb #delete-file-button-mb {
+    color: hsl(0, 90%, 53%);
+}
+
+
+#select-files-container-mb #selected-files-list-mb {
+    padding-left: 2px;
+    font-family: 'Noto Sans';
+    user-select: none;
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll;
+    display: none;
+}
+#select-files-container-mb #selected-files-list-mb .selected-file {
+    border-bottom: 2px solid black;
+    padding-left: 2px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(185, 185, 185);
+    font-family: 'Noto Sans';
+    position: relative;
+    vertical-align: top;
+}
+#select-files-container-mb #selected-files-list-mb .selected-files-title {
+    width: 100%;
+    font-family: 'Noto Sans';
+    text-align: center;
+    margin-bottom: 5px;
+}
+#select-files-container-mb #selected-files-list-mb .selected-file:hover {
+    cursor: pointer;
+    background-color: rgb(141, 141, 141);
+}
+#select-files-container-mb #selected-files-list-mb .selected-file:hover img {
+    transform: scale(1.2);
+}
+#select-files-container-mb #selected-files-list-mb .selected-file p {
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+#select-files-container-mb #selected-files-list-mb .selected-file img {
+    width: 25px;
+    position: absolute;
+    right: 3px;
+}
+
+
+#select-files-container-mb .file-bottom-mb {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0 0 4px #000;
+}
+
+#select-files-container-mb .file-bottom-mb .bottom-upload-icon {
+    height: 45px;
+    width: 45px;
+    
+    top: 2.5px;
+    left: 3px;
+
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+#select-files-container-mb .file-bottom-mb .bottom-upload-icon:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    background-color: rgb(141, 141, 141);
+}
+#select-files-container-mb .file-bottom-mb .bottom-upload-icon img {
+    height: 40px;
+    position: absolute;
+    left: 2.5px;
+    top: 2px;
+}
+#select-files-container-mb .file-bottom-mb #bottom-upload-area-mb {
+    height: 50px;
+    display: inline-block;
+    width: calc(100% - 101px);
+    margin-left: 2px;
+    padding-top: 2px;
+    font-family: 'Noto Sans';
+    line-height: 16px;
+    text-align: center;
+}
+
+#select-files-container-mb .file-bottom-mb #bottom-upload-area-mb div {
+    text-align: center;
+    padding-top: 4px;
+}
+
+#upload-file-confirm-mb {
+    color: rgb(126, 183, 236);
+    text-decoration: underline;
+}
+#upload-file-confirm-mb:hover {
+    cursor: pointer;
+    color: hsl(7, 74%, 71%);
+}
+#select-files-container-mb .file-bottom-mb #bottom-upload-area-mb .upload-load-bar {
+    border: 1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 20px;
+}
+#select-files-container-mb .file-bottom-mb #bottom-upload-area-mb .upload-load-bar p {
+    color: white;
+    margin-top: -3px;
+}
+#upload-load-bar-ind-mb {
+    background-color: rgb(23, 109, 238);
+    width: 0%;
+    transition: width 0.1s linear;
+    height: 18px;
+    margin-top: -17px;
+}
+
+#select-files-container-mb .file-bottom-mb .bottom-close {
+    height: 45px;
+    width: 45px;
+
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+
+    float: right;
+    margin-top: 2.5px;
+    margin-right: 3px;
+    font-family: 'Noto Sans';
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    user-select: none;
+    vertical-align: top;
+}
+#select-files-container-mb .file-bottom-mb .bottom-close:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    background-color: rgb(141, 141, 141);
+}

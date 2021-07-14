@@ -1,0 +1,86 @@
+.web-radio-par {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.interface-par {
+	width: 100%;
+}
+
+.radio-player-par {
+	background-color: rgb(185, 235, 255);
+	width: calc(200px + 20%);
+	height: 300px;
+	vertical-align: top;
+	display: inline-block;
+	border-radius: 10px;
+}
+.l-radio-button {
+	width: 100%;
+	margin: 0 auto;
+}
+.l-radio-button img {
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+}
+.l-radio-volume {
+	margin-top: 20px;
+}
+.cont-title {
+	width: 100%;
+	font-family: 'Noto Sans';
+	font-size: 30px;
+	margin-top: -5px;
+}
+.volume-title {
+	width: 100%;
+	font-family: 'Noto Sans';
+	font-size: 18px;
+}
+
+
+.download-par {
+	width: calc(100px + 70%);
+	background-color: white;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+.download-title {
+	font-family: 'Noto Sans';
+	font-size: 25px;
+}
+.brd-par {
+	width: 100%;
+}
+.brd {
+	width: 100%;
+	display: block;
+	background-color: #f5f5f5;
+	margin-top: 10px;
+	padding: 5px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-family: 'Noto Sans';
+}
+.brd-time {
+	font-size: 18px;
+}
+.brd-pres {
+	margin-bottom: 4px;
+}
+.brd-download {
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 2px;
+	margin: 2px;
+	margin-top: 10px;
+	background-color: white;
+	color: #00b6ff;
+}
+.brd-download:hover {
+	background-color: #cacaca;
+	color: #001fff;
+}

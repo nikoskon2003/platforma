@@ -1,0 +1,287 @@
+.title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+}
+
+.replies-list {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px hsla(220, 9%, 80%, 0.3);
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Noto Sans';
+    user-select: none;
+}
+.mobile .replies-list {
+    width: 98%;
+}
+
+.cat-title {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.reply {
+    width: 100%;
+    height: 35px;
+    background-color: hsl(113, 18%, 90%);
+    text-align: left;
+    font-family: 'Noto Sans';
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+
+    margin: 0;
+    padding: 5px;
+    padding-left: 7px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.reply:hover {
+    background-color: hsl(113, 70%, 80%);
+}
+.reply::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: hsl(108, 72%, 66%);
+}
+.reply:hover::after {
+    background-color: orange;
+}
+
+.inactive-reply {
+    width: 100%;
+    height: 35px;
+    background-color: hsl(0, 17%, 90%);
+    text-align: left;
+    font-family: 'Noto Sans';
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+
+    margin: 0;
+    padding: 5px;
+    padding-left: 7px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inactive-reply::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: hsl(0, 72%, 66%);
+}
+
+.grade-cont {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+.radio-holder input[type="radio"] {
+    display: none;
+}
+.radio-holder {
+    display: inline-block;
+    height: 30px;
+    margin: 0 auto;
+    background-color: rgb(226, 226, 226);
+    border-radius: 4px;
+    border: 1px solid rgb(173, 173, 173);
+    text-align: center;
+    padding: 0;
+    font-size: 0;
+    user-select: none;
+}
+.radio-cont-vis {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+}
+.radio-child {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    line-height: 30px;
+}
+.radio-child:hover {
+    cursor: pointer;
+}
+input[type="radio"]:checked ~ .radio-child.cor {
+    background-color: hsl(110, 88%, 61%) !important;
+}
+input[type="radio"]:checked ~ .radio-child.na {
+    background-color: hsl(39, 100%, 54%) !important;
+}
+input[type="radio"]:checked ~ .radio-child.wro {
+    background-color: hsl(0, 83%, 67%) !important;
+}
+.radio-cont-notif {
+    display: inline-block;
+    height: 100%;
+    width: calc(100% / 2);
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+}
+.button {
+    height: 30px;
+    padding: 2px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 22px;
+    user-select: none;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+.button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+
+.test-display {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: hsl(200, 60%, 60%);
+    border-radius: 4px;
+    text-align: center;
+}
+.mobile .test-display {
+    width: 98%;
+    background-color: unset;
+}
+
+.reply-info {
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+.info-cont {
+    display: inline-block;
+    margin: 10px;
+}
+.info-title {
+    display: block;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+}
+.info-test {
+    display: block;
+    font-family: 'Noto Sans';
+    font-size: 26px;
+}
+
+.question {
+    width: 90%;
+    padding: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+    font-family: 'Noto Sans';
+    user-select: none;
+
+    border-radius: 8px;
+    border: 1px solid rgb(218, 220, 224);
+    box-shadow: 1px 1px 1px hsla(220, 9%, 80%, 0.3);
+    background-color: white;
+}
+.mobile .question {
+    width: 100%;
+}
+.question-answer {
+    width: 100%;
+    margin-top: 20px;
+}
+.question-answer >* {
+    display: inline-block;
+    vertical-align: top;
+}
+.question-answer >p {
+    margin-left: 14px;
+}
+.question-image {
+    width: 100%;
+    text-align: center;
+}
+.question-image img {
+    max-width: min(80%, 400px);
+    border: 1px solid gray;
+}
+.question-image img:hover {
+    cursor: pointer;
+    border: 1px solid rgb(0, 247, 255);
+}
+.radio {
+    display: block;
+    margin-top: 14px;
+}
+.radio p {
+    margin-left: 4px;
+    width: calc(100% - 20px);
+    display: inline-block;
+}
+.radio input {
+    margin-top: 8px;
+    vertical-align: top;
+}
+
+.question-answer textarea {
+    padding: 2px;
+
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+
+    min-height: 40px;
+    max-height: 40px;
+    height: 40px;
+}

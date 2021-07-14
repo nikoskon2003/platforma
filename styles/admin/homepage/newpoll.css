@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+.title {
+  font-family: 'Roboto';
+  font-size: 46px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+#cover-actions {
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000000;
+  top:0;
+  bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+
+#box-container {
+  width: 90%;
+  border: 2px solid rgb(110, 114, 116);
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+
+.template-post {
+  background-color: hsl(80, 80%, 80%);
+  width: 99%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+
+  box-shadow: 1px 1px 1px hsl(120, 80%, 40%);
+
+  user-select: text;
+  text-align: left;
+}
+.template-post-title {
+  max-width: 100%;
+  width: 100%;
+  padding: 5px;
+  padding-top: 0;
+  font-family: 'Noto Sans';
+  font-size: 18px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.template-post-title textarea {
+  min-width: 100%;
+  max-width: 100%;
+  margin-top: 3px;
+  margin-bottom: -10px;
+  font-size: 18px;
+  height: 50px;
+}
+.template-post-date {
+  display: inline-block;
+  padding-left: 5px;
+  font-family: 'Noto Sans';
+  font-size: 13px;
+}
+.template-post-user {
+  display: inline-block;
+  padding-left: 5px;
+  font-family: 'Noto Sans';
+  font-size: 13px;
+  text-decoration: none;
+  color: rgb(0, 61, 0);
+}
+.template-post-line {
+  margin: 0 auto;
+  display: block;
+  width: 98%;
+  border: 1px solid green;
+  background-color: green; 
+}
+.template-post-text {
+  margin-top: 5px;
+  max-width: 100%;
+  padding: 5px;
+  padding-top: 0;
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  word-wrap: break-word;
+  white-space: normal;   
+}
+.template-post-text textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 200px;
+}
+.template-post-options-container {
+  margin: 0 auto;
+  margin-top: -10px;
+  text-align: center;
+  padding: 8px;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.option-add-button {
+  font-family: 'Noto Sans';
+  font-size: 17px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  padding: 2px;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
+  line-height: 1px;
+  height: 22px;
+  width: 190px;
+  user-select: none;
+}
+.option-add-button:hover {
+  background-color: hsl(0, 0%, 94%);
+  transform: scale(0.98);
+  cursor: pointer;
+}
+.option-add-button img {
+  width: 16px;
+  height: 16px;
+  margin-bottom: -1px;
+  margin-left: 2px;
+}
+
+.answ {
+	font-family: 'Noto Sans';
+    font-size: 17px;
+    background-color: rgb(212, 250, 212);
+    display: inline-block;
+    padding: 2px;
+    border-radius: 3px;
+    color: rgb(10, 117, 233);
+    text-decoration: none;
+    height: 22px;
+    vertical-align: middle;
+    line-height: 15px;
+    color: black;
+    margin: 5px;
+    margin-bottom: 0;
+}
+.answ img {
+  width: 16px;
+  height: 16px;
+  margin-bottom: -1px;
+  margin-left: 2px;
+  display: inline-block;
+  verical-align: middle;
+}
+
+
+.end-parent {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.class {
+    width: 100%;
+    height: 35px;
+    background-color: hsl(210, 17%, 93%);
+    text-align: left;
+    font-family: 'Noto Sans';
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.class p {
+    margin: 0;
+    padding: 5px;
+    padding-left: 7px;
+    max-width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.class:hover {
+    background-color: hsl(210, 4%, 73%);
+    cursor: pointer;
+}
+.class p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    background-color: hsl(210, 4%, 73%);
+}
+.class:hover p::after {
+    background-color: orange;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ p {
+    color: green;
+}
+input[type="checkbox"]:checked ~ p::after {
+    background-color: lime;
+}
+.submit-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Noto Sans';
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(173, 173, 173);
+  display: inline-block;
+  vertical-align: top;
+}
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+  transform: scale(0.98);
+}
+.bottom-buttons {
+  margin-top: 40px;
+  user-select: none;
+  margin-bottom: 10px;
+}
+.cancel-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Noto Sans';
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(173, 173, 173);
+  display: inline-block;
+  color: rgb(211, 16, 16);
+  text-decoration: none;
+  vertical-align: top;
+}
+.cancel-button:hover {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+  transform: scale(0.98);
+}

@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+#title {
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: "Roboto";
+}
+
+#place-container {
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.zoom-lens {
+  position: absolute;
+  border: 2px solid #666;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  pointer-events: none;
+}
+
+.zoom-result {
+  border: 1px solid black;
+  width: 256px;
+  height: 256px;
+}
+
+#img {
+  border: 1px solid black;
+  padding: 0;
+  image-rendering: pixelated;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#img-2 {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  image-rendering: pixelated;
+  transition: background 0.2s linear;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
+
+#selector {
+  position: absolute;
+  background-color: rgb(0, 195, 255);
+  border: 1px solid #111;
+  width: 0;
+  height: 0;
+  margin: 0;
+  display: none;
+  pointer-events: none;
+
+  animation: selectorAnim 2.5s linear infinite;
+}
+
+@keyframes selectorAnim {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: rgb(0, 153, 255);}
+  75% {background-color: rgb(0, 255, 0);}
+  100%   {background-color: red;}
+}
+
+#col-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Noto Sans";
+}
+
+#color-selector {
+  bottom: 0;
+  margin: 0 auto;
+  border: 1px solid #111;
+  background-color: rgb(219, 219, 219);
+  box-shadow: 1px 1px 2px grey;
+  width: 300px;
+  height: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 10;
+}
+
+.col {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  border: 1px solid #111;
+}
+.col:hover {
+  cursor: pointer;
+}
+
+.col.sel {
+  animation: colorAnim 2.5s linear infinite;
+  border-width: 2px;
+}
+
+@keyframes colorAnim {
+  0%   {border-color: red;}
+  25%  {border-color: yellow;}
+  50%  {border-color: rgb(0, 153, 255);}
+  75% {border-color: rgb(0, 255, 0);}
+  100%   {border-color: red;}
+}
+
+#submitButton {
+  background-color: rgb(219, 219, 219);
+  padding: 10px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px grey;
+  font-family: "Noto Sans";
+}
+#submitButton:hover {
+  background-color: rgb(196, 195, 195);
+  border: 1px solid black;
+  cursor: pointer;
+}
+#submitButton:disabled {
+  color: grey;
+  background-color: rgb(238, 238, 238);
+}
+
+#download {
+  font-family: "Noto Sans";
+}
+
+#help {
+	position: fixed;
+	height: 30px;
+	width: 20px;
+	top: calc(50% - 15px);
+	left: 0;
+	padding-top: 4px;
+	padding-right: 5px;
+	text-align: right;
+	text-decoration: none;
+	font-family: 'Noto Sans';
+	color: black;
+	background-color: #4af;	
+	pointer-events: all;
+	z-index: 10;
+	border-top-right-radius: 30%;
+	border-bottom-right-radius: 30%;
+	transition: width 0.1s linear;
+	box-shadow: 1px 1px 1px #16f;
+}
+#help:hover {
+	width: 40px;
+}

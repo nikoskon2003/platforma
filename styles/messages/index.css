@@ -1,0 +1,251 @@
+.title {
+    font-family: 'Roboto';
+    font-size: calc(10px + 2vw);
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sub-title {
+    font-family: 'Roboto';
+    font-size: calc(10px + 2vw);
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+.people-cont {
+    width: 80%;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 3px 7px 10px rgba(34, 40, 49, 0.5);
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: rgb(34, 40, 49);
+    overflow: auto;
+    height: 500px;
+    position: relative;
+    padding-top: 40px;
+    user-select: none;
+}
+.select-button-latest {
+    width: 50%;
+    /*background-color: rgb(0, 123, 180);*/
+    color: black;
+    margin: 0;
+    height: 40px;
+    display: inline-block;
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.select-button-all {
+    width: 50%;
+    /*background-color: rgb(46, 186, 252);*/
+    color: black;
+    margin: 0 auto;
+    height: 40px;
+    display: inline-block;
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.select-button-latest:hover {
+    background-color: rgb(46, 145, 190);
+    cursor: pointer;
+}
+.select-button-all:hover {
+    background-color: rgb(46, 145, 190);
+    cursor: pointer;
+}
+
+.people-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.user {
+    /*all: unset;*/
+    border-bottom: 1px solid rgb(200, 200, 200);
+
+    background-color: rgb(238, 238, 238);
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.user:hover {
+    background-color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+.user-online {
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+}
+.online-dot {
+    border-radius: 50%;
+    background-color: rgb(48, 153, 0);
+    box-shadow: 0 0 4px rgb(38, 121, 0);
+
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    height: 12px;
+    width: 12px;
+    margin: 0 auto;
+    display: none;
+}
+
+.user-details {
+    display: inline-block;
+
+    max-width: calc(100% - 30px);
+}
+.user-name {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Noto Sans';
+    font-size: calc(14px + 0.3vw);
+    height: 50px;
+    margin: 0;
+    text-align: left;
+    line-height: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.user-messages {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Noto Sans';
+    height: 0;
+    left: 30px;
+    bottom: 21px;
+}
+
+.user-date {
+    height: 50px;
+    font-family: 'Noto Sans';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: calc(14px + .5vw);
+}
+
+
+
+.title-mb {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.people-cont-mb {
+    width: 98%;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 3px 7px 10px rgba(34, 40, 49, 0.5);
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: rgb(34, 40, 49);
+    overflow: auto;
+    height: 400px;
+    position: relative;
+    padding-top: 40px;
+    user-select: none;
+}
+.select-button-latest-mb {
+    width: 50%;
+    /*background-color: rgb(0, 123, 180);*/
+    color: black;
+    margin: 0;
+    height: 40px;
+    display: inline-block;
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.select-button-all-mb {
+    width: 50%;
+    /*background-color: rgb(46, 186, 252);*/
+    color: black;
+    margin: 0 auto;
+    height: 40px;
+    display: inline-block;
+    font-family: 'Noto Sans';
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.select-button-latest-mb:hover {
+    background-color: rgb(46, 145, 190);
+    cursor: pointer;
+}
+.select-button-all-mb:hover {
+    background-color: rgb(46, 145, 190);
+    cursor: pointer;
+}
+
+.mobile * .user-name {
+    font-size: calc(10px + 1vw);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 2.4;
+    overflow: visible;
+}
+.mobile * .user-messages {
+    font-size: calc(8px + 1vw);
+    display: inline-block;
+    position: absolute;
+    height: 0px;
+    left: 0;
+    bottom: 20px;
+    width: 100px;
+    word-wrap: none;
+    overflow-wrap: normal;
+    overflow: visible;
+}
+
+.mobile * .user-details {
+    display: inline-block;
+    height: 50px;
+    position: relative;
+}
+
+.mobile * .user-date {
+    height: 0px;
+    font-family: 'Noto Sans';
+    position: absolute;
+    top: unset;
+    bottom: 20px;
+    right: 1px;
+    font-size: calc(10px + 1vw);
+}

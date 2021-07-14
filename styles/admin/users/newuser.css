@@ -1,0 +1,251 @@
+.title {
+    font-family: 'Roboto';
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.field-label {
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+}
+
+.user-type {
+    width: calc(500px + 10vw);
+    height: 160px;
+    display: block;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+.new-student {
+    width: 85px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(63, 64, 65);
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+.new-student:hover{
+    background-color: rgb(161, 161, 161);
+    border: 1px solid rgb(110, 112, 114);
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.new-teacher {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(63, 64, 65);
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+.new-teacher:hover{
+    background-color: rgb(161, 161, 161);
+    border: 1px solid rgb(110, 112, 114);
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.student-form {
+    width: calc(500px + 10vw);
+    height: 580px;
+    display: none;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+.teacher-form {
+    width: calc(500px + 10vw);
+    height: 520px;
+    display: none;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.class-select {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(110, 114, 116);
+    font-family: 'Noto Sans';
+}
+
+
+
+.action-holder {
+    width: calc(500px + 10vw);
+    height: 260px;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.field-label {
+    text-align: center;
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+}
+
+input[type="text"], input[type="password"] {
+    width: 75%;
+    height: 35px;
+    display: block;
+    margin: 2px auto;
+    margin-top: 5px;
+}
+
+.button {
+    width: 85px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(63, 64, 65);
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    user-select: none;
+}
+.button:hover {
+    background-color: rgb(161, 161, 161);
+    border: 1px solid rgb(110, 112, 114);
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.back-button {
+    width: 85px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(63, 64, 65);
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(192, 20, 20);
+    padding-top: 2px;
+    user-select: none;
+}
+.back-button:hover{
+    background-color: rgb(161, 161, 161);
+    border: 1px solid rgb(110, 112, 114);
+    cursor: pointer;
+}
+
+
+.radio-cont {
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    z-index: 5;
+    margin: 0;
+    padding: 2px;
+    display: inline-block;
+    width: 45px;
+    text-align: center;
+}
+.radio-cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.radio-cont input:hover ~ .radio-child {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.radio-cont input:checked ~ .radio-child {
+    background-color: #3788e4;
+    border-radius: 5px;
+}
+.radio-child {
+    background-color: #e5e5e5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.radio-holder {
+    background-color: #e5e5e5;
+    padding: 2px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-family: 'Noto Sans';
+    user-select: none;
+}
+  
+.error {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Noto Sans';
+    color: rgb(231, 32, 25);
+}
+
+.user-type-mb {
+    width: 96%;
+    height: 160px;
+    display: block;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+.student-form-mb {
+    width: 96%;
+    height: 580px;
+    display: none;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}
+.teacher-form-mb {
+    width: 96%;
+    height: 520px;
+    display: none;
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 2px solid rgb(110, 114, 116);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+}

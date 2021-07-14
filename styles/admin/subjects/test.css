@@ -1,0 +1,241 @@
+.title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+}
+
+.test-info {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 1px hsla(220, 9%, 80%, 0.3);
+    border-radius: 8px;
+    text-align: center;
+}
+.mobile .test-info {
+    width: 98%;
+}
+
+.field-name-text {
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 24px;
+    display: block;
+    pointer-events: none;
+}
+
+input[name="name"] {
+    display: block;
+    width: calc(300px + 4vw);
+    height: 30px;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    border: 1px solid rgb(63, 64, 65);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    pointer-events: auto;
+}
+.mobile input[name="name"] {
+    width: 90%;
+} 
+.time {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 20px;
+}
+.time-cont {
+    display: inline-block;
+    margin: 4px;
+}
+.time-title {
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    display: block;
+}
+
+.time-cont input {
+    width: 60px;
+    margin: 0 auto;
+    display: block;
+
+    font-size: 18px;
+    border: 1px solid rgb(63, 64, 65);
+    border-radius: 2px;
+    padding: 1px;
+    pointer-events: auto;
+}
+
+.radio-holder input[type="radio"] {
+    display: none;
+}
+.radio-holder {
+    width: min(300px, 96%);
+    height: 30px;
+    margin: 0 auto;
+    background-color: rgb(226, 226, 226);
+    border-radius: 4px;
+    border: 1px solid rgb(173, 173, 173);
+    text-align: center;
+    padding: 0;
+    font-size: 0;
+    user-select: none;
+    margin-bottom: 20px;
+}
+.radio-cont-vis {
+    display: inline-block;
+    height: 100%;
+    width: calc(100% / 2);
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+}
+.radio-child {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    line-height: 30px;
+}
+.radio-child:hover {
+    cursor: pointer;
+}
+input[type="radio"]:checked ~ .radio-child {
+    background-color: hsl(200, 80%, 70%) !important;
+}
+.radio-cont-notif {
+    display: inline-block;
+    height: 100%;
+    width: calc(100% / 2);
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+}
+.button {
+    height: 30px;
+    padding: 2px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Noto Sans';
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(173, 173, 173);
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 22px;
+    user-select: none;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+    transform: scale(0.98);
+}
+.button img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -2px;
+    margin-left: 2px;
+}
+
+.test-display {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: hsl(200, 60%, 60%);
+    border-radius: 4px;
+    text-align: center;
+}
+.test-buttons {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mobile .test-display {
+    width: 98%;
+    background-color: unset;
+}
+
+.question {
+    width: 90%;
+    padding: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+    font-family: 'Noto Sans';
+    user-select: none;
+
+    border-radius: 8px;
+    border: 1px solid rgb(218, 220, 224);
+    box-shadow: 1px 1px 1px hsla(220, 9%, 80%, 0.3);
+    background-color: white;
+}
+.mobile .question {
+    width: 100%;
+}
+.question-answer {
+    width: 100%;
+    margin-top: 20px;
+}
+.question-answer >* {
+    display: inline-block;
+    vertical-align: top;
+}
+.question-image {
+    width: 100%;
+    text-align: center;
+}
+.question-image img {
+    max-width: min(80%, 400px);
+    border: 1px solid gray;
+}
+.question-image img:hover {
+    cursor: pointer;
+    border: 1px solid rgb(0, 247, 255);
+}
+.radio {
+    display: block;
+    margin-top: 14px;
+}
+.radio p {
+    margin-left: 4px;
+    width: calc(100% - 20px);
+    display: inline-block;
+}
+.radio input {
+    margin-top: 8px;
+    vertical-align: top;
+}
+
+.question-answer textarea {
+    padding: 2px;
+
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+
+    min-height: 40px;
+    max-height: 40px;
+    height: 40px;
+}

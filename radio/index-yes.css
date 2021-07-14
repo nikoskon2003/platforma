@@ -1,0 +1,155 @@
+.web-radio-par {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.interface-par {
+	width: 100%;
+}
+
+.radio-player-par {
+	background-color: rgb(185, 235, 255);
+	width: calc(200px + 20%);
+	height: 300px;
+	vertical-align: top;
+	display: inline-block;
+	border-radius: 10px;
+}
+.l-radio-button {
+	width: 100%;
+	margin: 0 auto;
+}
+.l-radio-button img {
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+}
+.l-radio-volume {
+	margin-top: 20px;
+}
+.cont-title {
+	width: 100%;
+	font-family: 'Noto Sans';
+	font-size: 30px;
+	margin-top: -5px;
+}
+.volume-title {
+	width: 100%;
+	font-family: 'Noto Sans';
+	font-size: 18px;
+}
+.program-par {
+	background-color: rgb(30, 230, 100);
+	width: calc(200px + 20%);
+	height: 300px;
+	vertical-align: top;
+	display: inline-block;
+	border-radius: 10px;
+}
+.program-cont {
+	overflow-y: auto;
+	width: 100%;
+	max-height: 255px;
+}
+
+
+.broadcast {
+    height: 30px;
+    max-height: 30px;
+    width: 100%;
+    background-color: rgb(25, 115, 55);
+    display: inline-block;
+    text-align: left;
+	user-select: none;
+}
+.broadcast:hover {
+    background-color: rgb(10, 60, 30);
+    cursor: pointer;
+}
+.broadcast-title {
+    width: 100%;
+    height: 30px;
+    font-family: 'Noto Sans';
+    line-height: 30px;
+    padding-left: 5px;
+	color: white;
+	text-align: center;
+}
+.broadcast-desc {
+	margin-bottom: 3px;
+}
+
+.bc-tgl:checked ~.broadcast-data {
+    display: block;
+}
+.bc-tgl {
+    display: none;
+}
+.broadcast-data {
+    background-color: rgb(150, 255, 190);
+    width: 100%;
+    pointer-events: none;
+    display: none;
+	font-family: 'Noto Sans';
+	padding: 2px;
+}
+
+.chat-par {
+	width: calc(100px + 70%);
+	background-color: white;
+	height: 500px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+.text-input {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid black;
+	background-color: white;
+}
+
+.text-area {
+	height: 30px;
+	border: 1px solid black;
+	padding: 2px;
+	width: calc(100% - 100px);
+	margin: 0 auto;
+}
+.send-button {
+	width: 90px;
+	height: 30px;
+	margin: 0 auto;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.messages-cont {
+	width: 100%;
+	display: block;
+	overflow: auto;
+	max-height: 450px;
+}
+
+.message {
+	border-top: 1px solid gray;
+	text-align: left;
+	font-family: 'Noto Sans';
+}
+
+.time-sent {
+	display: inline-block;
+	color: #a0a0a0;
+}
+.name-sent {
+	display: inline-block;
+	color: #006a9c;
+	font-weight: bold;
+	padding-left: 2px;
+}
+.text-sent {
+	display: inline-block;
+	color: black;
+	padding-left: 10px;
+}

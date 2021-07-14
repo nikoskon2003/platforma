@@ -1,0 +1,278 @@
+#game-cont {
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+
+#game-cont .timeleft {
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 30px;
+    margin-bottom: -25px;
+}
+
+.grid-cont {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: top;
+    margin-top: 25px;
+}
+
+.grid {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #b4b4ff;
+    background-color: #b4b4ff;
+}
+
+.own-grid-hider {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+#messages-cont {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+#messages-cont .status-title {
+    width: 100%;
+    font-family: 'Noto Sans', Arial;
+    display: inline-block;
+    font-size: 24px;
+    text-align: left;
+    padding: 5px;
+}
+#messages-cont .gotohome {
+    width: 100%;
+    font-family: 'Noto Sans', Arial;
+    display: none;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px;
+}
+#messages-cont .placed-ships {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 5px;
+
+    display: none;
+}
+#messages-cont .placed-ships .ship-name {
+    font-family: 'Noto Sans', Arial;
+    font-size: 15px;
+    display: inline-block;
+    width: 125px;
+}
+#messages-cont .placed-ships .ship-cnt {
+    font-family: 'Noto Sans', Arial;
+    font-size: 15px;
+    display: inline-block;
+}
+#messages-cont .placed-ships .cleargridbutton {
+    margin-top: 4px;
+}
+#messages-cont .control-buttons {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 5px;
+    bottom: 10px;
+    position: absolute;
+
+    display: none;
+}
+#messages-cont .control-buttons p {
+    font-family: 'Noto Sans', Arial;
+    font-size: 15px;
+    display: inline-block;
+}
+#messages-cont .control-buttons .enterqueuebutton {
+    margin-left: calc(50% - 60px);
+    width: 120px;
+    margin-top: 20px;
+}
+
+#messages-cont .control-buttons .room-buttons {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+#messages-cont .control-buttons .createroom {
+    display: inline-block;
+}
+#messages-cont .control-buttons .inputroomcode {
+    width: 60px;
+    display: inline-block;
+}
+
+#messages-cont .exitqueuebutton {
+    display: block;
+    margin: 5px;
+
+    display: none;
+}
+
+.grid-cont .online-now {
+    width: 100%;
+    text-align: left;
+    font-family: 'Noto Sans', Arial;
+    font-size: 14px;
+    position: absolute;
+}
+
+.grid-cont .opponent-name {
+    width: 100%;
+    text-align: right;
+    font-family: 'Noto Sans', Arial;
+    font-size: 14px;
+    position: absolute;
+}
+
+#messages-cont .gotostartbutton {
+    display: block;
+    margin: 5px;
+
+    display: none;
+}
+
+.tile {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    float: left;
+    position: relative;    
+
+    border: 1px solid #b4b4ff;
+    background-color: white;
+}
+
+.tile:hover {
+    background-color: hsl(180, 90%, 90%);
+    border: 1px solid hsl(190, 70%, 70%);
+    cursor: pointer;
+}
+
+.tile.good-tile::after {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    z-index: 3;
+    opacity: 1;
+    background-color: #39cc34;
+}
+.tile.bad-tile::after {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    z-index: 3;
+    background-color: #da2d2d;
+    opacity: 0;
+    animation: fade-out 1s ease-out 1;
+}
+
+.tile.miss::after {
+    content: '.';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    text-align: center;
+    line-height: 6px;
+    color: #6f6f6f;
+    background-color: #e8e8e8;
+    pointer-events: none;
+}
+.tile.hit::after {
+    content: '.';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    text-align: center;
+    line-height: 6px;
+    color: #d60000;
+    background-color: #ffcbcb;
+    pointer-events: none;
+}
+.tile.sunk::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background-color: red;
+    pointer-events: none;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.stats {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.stats .own-stats {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+}
+.stats .leaderboard {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Noto Sans';
+    text-align: left;
+}
+th, td {
+    padding: 5px;
+    font-weight: normal;
+}
+tr:nth-child(odd){
+    background-color:#ebebeb;
+}
+tr:nth-child(1){
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+td:nth-child(3){
+    text-align: right;
+}
